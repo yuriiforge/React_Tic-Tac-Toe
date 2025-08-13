@@ -1,8 +1,10 @@
-export const deriveActivePlayer = (gameTurns) => {
-  let currentPlayer = 'X';
+import { gameSymbols } from '../constants/gameSymbols';
 
-  if (gameTurns.length > 0 && gameTurns[0].player === 'X') {
-    currentPlayer = 'O';
+export const deriveActivePlayer = (gameTurns) => {
+  let currentPlayer = gameSymbols.X;
+
+  if (gameTurns.length > 0 && gameTurns[0].player === gameSymbols.X) {
+    currentPlayer = gameSymbols.O;
   }
 
   return currentPlayer;

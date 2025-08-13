@@ -64,7 +64,7 @@ function App() {
           <Player
             name={PLAYERS.O}
             symbol={gameSymbols.O}
-            isActive={activePlayer === gameSymbols.X}
+            isActive={activePlayer === gameSymbols.O}
             onChangeName={handlePlayerNameChange}
           />
         </ol>
